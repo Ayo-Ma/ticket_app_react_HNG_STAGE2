@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logo from './../assets/logo.svg'
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,6 +9,7 @@ const Navbar = () => {
   return (
     <nav className="flex items-center justify-between px-8 py-4 bg-white/70 backdrop-blur-md fixed w-full top-0 z-50 shadow-sm mb-20">
       <h1 className="text-2xl font-bold text-gray-800 tracking-tight">
+        
         Ticket<span className="text-gray-800">App</span>
       </h1>
 

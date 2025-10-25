@@ -2,6 +2,7 @@
 import { motion} from "framer-motion";
 import { Link } from "react-router-dom";
 import wave from './../assets/wave.svg'
+import logo from './../assets/logo.svg'
 
 export default function Hero() {
   return (
@@ -28,6 +29,7 @@ export default function Hero() {
 
 
       <img src={wave} className="st w-full left-0 right-0" alt="wave background logo" />
+      
 
       <motion.div
         initial={{ opacity: 0, y: 10 }}

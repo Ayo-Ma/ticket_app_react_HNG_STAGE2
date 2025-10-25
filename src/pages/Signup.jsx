@@ -29,7 +29,7 @@ export default function SignUp() {
       toast.error(res.error);
     } else {
       toast.success("Signup successful!");
-      navigate("/auth/login"); // ✅ Redirect to login page after signup
+      navigate("/auth/login"); 
     }
   };
 
