@@ -1,10 +1,11 @@
 /* eslint-disable no-unused-vars */
 import { motion} from "framer-motion";
 import { Link } from "react-router-dom";
+import wave from './../assets/wave.svg'
 
 export default function Hero() {
   return (
-    <section className="h-screen flex flex-col items-center justify-center text-center px-6 bg-linear-to-b from-white to-blue-50">
+    <section className="h-screen flex flex-col items-center  justify-center text-center px-6 bg-linear-to-b from-white to-blue-50">
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -24,6 +25,9 @@ export default function Hero() {
         Manage, sell, and verify tickets all in one modern web app — built for speed,
         simplicity, and growth.
       </motion.p>
+
+
+      <img src={wave} className="st w-full left-0 right-0" alt="wave background logo" />
 
       <motion.div
         initial={{ opacity: 0, y: 10 }}

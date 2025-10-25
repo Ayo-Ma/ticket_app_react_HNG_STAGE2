@@ -42,12 +42,12 @@ export default function Dashboard() {
               <div className="flex items-center space-x-3 pl-4 border-l border-gray-200">
                 <div className="text-right hidden sm:block">
                   <p className="text-sm font-semibold text-gray-700">
-                    {user.name}
+                    {user.email}
                   </p>
                   <p className="text-xs text-gray-500">Administrator</p>
                 </div>
                 <div className="w-10 h-10 bg-linear-to-br from-gray-500 to-gray-600 rounded-full flex items-center justify-center text-white font-semibold">
-                  {user.name.charAt(0)}
+                  {user.email.charAt(0)}
                 </div>
               </div>
               <button
@@ -66,7 +66,7 @@ export default function Dashboard() {
         {/* Welcome Section */}
         <div className="mb-8">
           <h2 className="text-4xl font-bold text-gray-900 mb-2">
-            Welcome back, {user.name.split(" ")[0]} 👋
+            Welcome back, {user.email.split(" ")[0]} 👋
           </h2>
           <p className="text-gray-600">
             Here's what's happening with your tickets today.
