@@ -35,7 +35,7 @@ export default function Features() {
           <motion.div
             key={i}
             whileHover={{ scale: 1.05 }}
-            className="p-8 rounded-2xl  bg-white border  transition-all"
+            className="p-8 rounded-2xl  bg-white border shadow-lg shadow-gray-200  transition-all"
           >
             <div className="flex justify-center mb-4">{f.icon}</div>
             <h3 className="text-xl font-semibold mb-2">{f.title}</h3>

@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../context/AuthContext";
 import { toast } from "react-toastify";
 import { Link, useNavigate } from "react-router-dom";
+import Footer from "../components/Footer";
 
 export default function SignUp() {
   const { signup } = useContext(AuthContext);
@@ -34,6 +35,7 @@ export default function SignUp() {
   };
 
   return (
+    <>
     <div className="flex items-center justify-center min-h-screen bg-gray-50">
       <form
         onSubmit={handleSubmit}
@@ -79,5 +81,7 @@ export default function SignUp() {
         </p>
       </form>
     </div>
+      <Footer />
+      </>
   );
 }

@@ -1,0 +1,41 @@
+<svg width="100%" height="100%" viewBox="0 0 1300 1200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+    <defs>
+        <style>
+      @keyframes float {
+        0% { transform: translateY(0) translateX(0); }
+        50% { transform: translateY(-20px) translateX(10px); }
+        100% { transform: translateY(0) translateX(0); }
+      }
+
+      @keyframes float-slow {
+        0% { transform: translateY(0) translateX(0); }
+        50% { transform: translateY(-15px) translateX(-15px); }
+        100% { transform: translateY(0) translateX(0); }
+      }
+
+      @keyframes float-alt {
+        0% { transform: translateY(0) translateX(0); }
+        50% { transform: translateY(25px) translateX(-10px); }
+        100% { transform: translateY(0) translateX(0); }
+      }
+
+      circle {
+        transform-box: fill-box;
+        transform-origin: center;
+      }
+
+      .float1 { animation: float 6s ease-in-out infinite; }
+      .float2 { animation: float-slow 8s ease-in-out infinite; }
+      .float3 { animation: float-alt 10s ease-in-out infinite; }
+      .float4 { animation: float 9s ease-in-out infinite; }
+      .float5 { animation: float-slow 7s ease-in-out infinite; }
+      .float6 { animation: float-alt 11s ease-in-out infinite; }
+    </style>
+    </defs>
+    <circle class="float1" cx="200" cy="200" r="200" fill="#a8a8a8ff" opacity="0.25" />
+    <circle class="float2" cx="1200" cy="100" r="60" fill="#4d4d4dff" opacity="0.25" />
+    <circle class="float3" cx="300" cy="600" r="100" fill="#c7c7c7ff" opacity="0.3" />
+    <circle class="float4" cx="1000" cy="500" r="90" fill="#c9c9c9ff" opacity="0.25" />
+    <circle class="float5" cx="700" cy="300" r="120" fill="#e8e8e8ff" opacity="0.25" />
+    <circle class="float6" cx="1300" cy="700" r="110" fill="#676767ff" opacity="0.25" />
+</svg>

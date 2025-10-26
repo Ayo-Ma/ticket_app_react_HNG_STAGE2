@@ -12,6 +12,7 @@ import {
   ArrowRight,
   Activity,
 } from "lucide-react";
+import Footer from "../components/Footer";
 
 export default function Dashboard() {
   const { logout, user } = useContext(AuthContext);
@@ -63,7 +64,7 @@ export default function Dashboard() {
       </nav>
 
       <div className="max-w-7xl mx-auto px-6 py-8">
-        {/* Welcome Section */}
+      
         <div className="mb-8">
           <h2 className="text-4xl font-bold text-gray-900 mb-2">
             Welcome back, {user.email.split(" ")[0]} 👋
@@ -73,7 +74,7 @@ export default function Dashboard() {
           </p>
         </div>
 
-        {/* Stats Grid */}
+       
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
 
           <div className="bg-white rounded-2xl p-6   border border-gray-200">
@@ -91,7 +92,6 @@ export default function Dashboard() {
             <p className="text-3xl font-bold text-gray-900">{total}</p>
           </div>
 
-          {/* Open Tickets */}
           <div className="bg-white rounded-2xl p-6  border border-gray-200">
             <div className="flex items-center justify-between mb-4">
               <div className="p-3 bg-orange-100 rounded-xl">
@@ -272,6 +272,7 @@ export default function Dashboard() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

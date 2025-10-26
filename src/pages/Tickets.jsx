@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { toast } from "react-toastify";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 import {
   Edit,
@@ -114,7 +115,7 @@ export default function Tickets() {
  
   return (
     <>
-      {/* <Navbar /> */}
+   
 
       <section className="max-w-5xl mx-auto px-6 py-8 mt-20 bg-whit rounded-3xl border border-gray-200 shadow-sm my-12">
        
@@ -282,6 +283,7 @@ export default function Tickets() {
           )}
         </div>
       </section>
+      <Footer />
     </>
   );
 }

@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../context/AuthContext";
 import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
 export default function Login() {
   const { login } = useContext(AuthContext); 
@@ -16,6 +17,7 @@ export default function Login() {
   };
 
   return (
+    <>
     <div className="flex items-center justify-center min-h-screen bg-gray-50">
       <form
         onSubmit={handleSubmit}
@@ -49,5 +51,7 @@ export default function Login() {
         </p>
       </form>
     </div>
+      <Footer />
+      </>
   );
 }
